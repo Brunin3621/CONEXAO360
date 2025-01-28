@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos por Categoria de Curso</title>
+    <link rel="stylesheet" href="osca.css">
+    <style>
+        /* Reset de estilo */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .category {
+            margin-bottom: 40px;
+        }
+
+        .category h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 220px;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .photo img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .info h3 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .info p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .card-container {
+                justify-content: center;
+            }
+
+            .card {
+                max-width: 180px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .category h2 {
+                font-size: 20px;
+            }
+
+            .card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Alunos por Categoria de Curso</h1>
+
+        <!-- Categoria Farmácia -->
+        <div class="category">
+            <h2>Curso de Farmácia</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="photo">
+                        <img src="ld.jpg" alt="Aluno 1">
+                    </div>
+                    <div class="info">
+                        <h3>Ludmila Dalcanal</h3>
+                        <p>Curso: Farmácia</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="julia.jpg" alt="Aluno 2">
+                    </div>
+                    <div class="info">
+                        <h3>Julia Esteves</h3>
+                        <p>Curso: Farmácia</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="nv.jpg" alt="Aluno 3">
+                    </div>
+                    <div class="info">
+                        <h3>Natália Vilela</h3>
+                        <p>Curso: Farmácia</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="helo.jpg" alt="Aluno 4">
+                    </div>
+                    <div class="info">
+                        <h3>Heloísa Pellegrini</h3>
+                        <p>Curso: Farmácia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categoria Fisioterapia -->
+        <div class="category">
+            <h2>Curso de Fisioterapia</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="photo">
+                        <img src="natan.jpg" alt="Aluno 5">
+                    </div>
+                    <div class="info">
+                        <h3>Nathan Borda</h3>
+                        <p>Curso: Fisioterapia</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="marina.jpg" alt="Aluno 6">
+                    </div>
+                    <div class="info">
+                        <h3>Marina Corazza</h3>
+                        <p>Curso: Fisioterapia</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="davibraga - Copia.jpg" alt="Aluno 7">
+                    </div>
+                    <div class="info">
+                        <h3>Davi Braga</h3>
+                        <p>Curso: Fisioterapia</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="guuilherme.jpg" alt="Aluno 8">
+                    </div>
+                    <div class="info">
+                        <h3>Guilherme Guedes</h3>
+                        <p>Curso: Fisioterapia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categoria Enfermagem -->
+        <div class="category">
+            <h2>Curso de Enfermagem</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="photo">
+                        <img src="mv.jpg" alt="Aluno 9">
+                    </div>
+                    <div class="info">
+                        <h3>Mavi</h3>
+                        <p>Curso: Enfermagem</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="rf.jpg" alt="Aluno 10">
+                    </div>
+                    <div class="info">
+                        <h3>Rafaela Fonseca</h3>
+                        <p>Curso: Enfermagem</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="lp.jpg" alt="Aluno 11">
+                    </div>
+                    <div class="info">
+                        <h3>Luisa Prates</h3>
+                        <p>Curso: Enfermagem</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="homen.jpg" alt="Aluno 12">
+                    </div>
+                    <div class="info">
+                        <h3>José Goulart</h3>
+                        <p>Curso: Enfermagem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categoria Medicina -->
+        <div class="category">
+            <h2>Curso Medicina</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="photo">
+                        <img src="estevan.jpg" alt="Aluno 13">
+                    </div>
+                    <div class="info">
+                        <h3>Estevão Anjos</h3>
+                        <p>Curso: Medicina</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="madu.jpg" alt="Aluno 14">
+                    </div>
+                    <div class="info">
+                        <h3>Maria Eduarda Carvalho</h3>
+                        <p>Curso: Medicina</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="piaza.jpg" alt="Aluno 15">
+                    </div>
+                    <div class="info">
+                        <h3>Giovanna Piazza</h3>
+                        <p>Curso: Medicina</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="brian.jpg" alt="Aluno 16">
+                    </div>
+                    <div class="info">
+                        <h3>Brian Kisaki</h3>
+                        <p>Curso: Medicina</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categoria Educação Física -->
+        <div class="category">
+            <h2>Curso Educação Física</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="photo">
+                        <img src="mil.jpg" alt="Aluno 17">
+                    </div>
+                    <div class="info">
+                        <h3>Mylena Torres</h3>
+                        <p>Curso: Educação Física</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="portella.jpg" alt="Aluno 18">
+                    </div>
+                    <div class="info">
+                        <h3>Luciano Portella</h3>
+                        <p>Curso: Educação Física</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="sandy.jpg" alt="Aluno 19">
+                    </div>
+                    <div class="info">
+                        <h3>Sandy Eduarda</h3>
+                        <p>Curso: Educação Física</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de Notícias">
+    <title>Página de Notícias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        main {
+            margin: 20px 0;
+        }
+        .noticias {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .noticia {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .noticia h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .noticia p {
+            font-size: 16px;
+            color: #555;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+        /* Estilo do botão de voltar */
+        .btn-voltar {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #6c757d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .btn-voltar:hover {
+            background-color: #5a6268;
+        }
+        @media (max-width: 768px) {
+            .noticias {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Notícias</h1>
+            <p>Fique por dentro das últimas notícias</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Botão de Voltar -->
+            <a href="javascript:history.back()" class="voltar-btn">Voltar</a>
+            
+            <section class="noticias">
+                <div class="noticia">
+                    <h2>Notícia 1: Novo Curso de Engenharia</h2>
+                    <p>O curso de Engenharia da Universidade X está com novas vagas abertas para o semestre 2025. Aproveite essa oportunidade e inscreva-se!</p>
+                </div>
+
+                <div class="noticia">
+                    <h2>Notícia 2: Medicina com Novos Recursos</h2>
+                    <p>A faculdade de Medicina agora conta com um novo laboratório de práticas, com equipamentos de última geração para os alunos do curso.</p>
+                </div>
+
+                <div class="noticia">
+                    <h2>Notícia 3: Inscrições Abertas para Direito</h2>
+                    <p>As inscrições para o curso de Direito estão abertas até o final do mês. Não perca essa chance de estudar na melhor faculdade da região.</p>
+                </div>
+
+                <div class="noticia">
+                    <h2>Notícia 4: Arquitetura e Sustentabilidade</h2>
+                    <p>O curso de Arquitetura agora oferece uma nova linha de pesquisa focada em construções sustentáveis e tecnologias verdes.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CONEXÃO 3.6.0 . Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

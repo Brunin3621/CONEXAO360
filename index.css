@@ -1,0 +1,185 @@
+/* Resetando margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo fonte global e cores */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header .logo h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+header nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #f4b400;
+    border-radius: 5px;
+}
+
+/* Seções */
+main {
+    padding: 40px 20px;
+}
+
+/* Seção de Notícias em Destaque */
+.noticias-destaque {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.noticia {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.noticia:hover {
+    transform: translateY(-10px);
+}
+
+.noticia img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.noticia .descricao {
+    padding: 15px;
+}
+
+.noticia .descricao h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.noticia .descricao p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.noticia .descricao a {
+    color: #f4b400;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.noticia .descricao a:hover {
+    text-decoration: underline;
+}
+
+/* Seção de Categorias */
+.categoria-noticias {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.categoria {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.categoria h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.categoria ul {
+    list-style: none;
+}
+
+.categoria ul li {
+    margin: 10px 0;
+}
+
+.categoria ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.categoria ul li a:hover {
+    color: #f4b400;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .categoria-noticias {
+        flex-direction: column;
+    }
+
+    .categoria {
+        width: 100%;
+    }
+}

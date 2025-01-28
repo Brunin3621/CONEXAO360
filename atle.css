@@ -1,0 +1,127 @@
+/* Resetando estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #2d3a4f;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    color: #7d8b98;
+}
+
+/* Botão de Voltar */
+.btn-voltar {
+    display: inline-block;
+    background-color: #f7a623;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background-color: #e6891f;
+}
+
+/* Seção de perfis das atléticas */
+.atleticas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.perfil {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.perfil:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.perfil img.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.perfil h2 {
+    font-size: 26px;
+    color: #2d3a4f;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.perfil p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.perfil strong {
+    font-weight: bold;
+    color: #f7a623;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .perfil {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .btn-voltar {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notícia - Exemplo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Resetando alguns estilos padrões */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        .news-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding-bottom: 20px;
+        }
+
+        .news-container img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-content h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .news-content p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        /* Estilo do botão de voltar */
+        .btn-voltar {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 20px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-voltar:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .news-container img {
+                height: 300px;
+            }
+            .news-content h2 {
+                font-size: 1.8rem;
+            }
+            .btn-voltar {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Notícia de Hoje</h1>
+    </header>
+
+    <div class="news-container">
+        <!-- Botão de Voltar -->
+        <a href="javascript:history.back()" class="btn-voltar">Voltar</a>
+
+        <img src="bixo.jpg" alt="Imagem da Notícia">
+        <div class="news-content">
+            <h2>Bixos 2025</h2>
+            <p><strong>Data:</strong> 28 de Janeiro de 2025</p>
+
+            <p>Olá, bixos! Primeiramente, queria dar os parabéns a todos vocês que conseguiram vencer o vestibular e entrar para a Federal! Você, bixo da Unipampa Campus Uruguaiana, seja bem-vindo!</p>
+
+            <p>Se vocês ainda não seguem a gente no Instagram, sigam lá! Somos a @conexao__federal, a 01 da Federal do Pampa. Somos parceiros de várias festas universitárias e, claro, sabemos que vocês devem estar ansiosos para a calourada, né? Então, podem aguardar que com certeza já estão organizando tudo para vocês.</p>
+
+            <p>Se você está atrás dos seus veteranos, é só chamar a gente no Insta que levamos você até eles!</p>
+
+            <p>Mais uma vez, sejam bem-vindos ao Pampa!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CONEXÃO 360 - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
